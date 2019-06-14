@@ -31,9 +31,12 @@ func (appConf *Config) LoadConfig(adapterType, filename string) (err error) {
 		fmt.Println("LoadConfig faield", err)
 		return err
 	}
+
 	appConf.LogPath = conf.String("LOG::LogPath")
 	appConf.LogLevel = ConvertLogLevel(conf.String("LOG::LogLevel"))
 	appConf.ChanSize, err = conf.Int("LOG::ChanSize")
+	appConf.KafkaIp = conf.String("KAFKA::ServerIp")
+
 	err = appConf.LoadCollectConf(conf)
 	if err != nil {
 		panic("Load CollectConf faield")

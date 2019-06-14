@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/astaxie/beego/logs"
+	"kafka-logMgr/kafka"
 	"kafka-logMgr/models"
 	"kafka-logMgr/tailf"
 )
@@ -29,14 +30,20 @@ func main() {
 	if err != nil {
 		fmt.Println("json failed")
 	}
-	logs.Debug("init all success\n")
-	logs.Debug("%v\n", string(confStr))
 
 	err = tailf.InitTailf(appConf.LogCollect, appConf.ChanSize)
 	if err != nil {
 		logs.Error("InitTailf failed", err)
 		return
 	}
+
+	err = kafka.InitKafka(appConf.KafkaIp)
+	if err != nil {
+		logs.Error("InitKafka failed")
+		return
+	}
+	logs.Debug("init all success\n")
+	logs.Debug("%v\n", string(confStr))
 
 	err = ServerRun()
 	if err != nil {

@@ -5,6 +5,7 @@ type Config struct {
 	LogLevel   int
 	LogCollect []CollectCofig
 	ChanSize   int
+	KafkaIp    string
 }
 
 type CollectCofig struct {

@@ -36,7 +36,7 @@ func InitTailf(config []models.CollectCofig, ChanSize int) error {
 	conf.ReOpen = true
 	conf.Follow = true
 
-	tailObjMgr := &TailObjMgr{
+	tailObjMgr = &TailObjMgr{
 		Tails:   make([]*TailObj, 2),
 		MsgChan: make(chan *TailMessage, ChanSize),
 	}
@@ -71,4 +71,10 @@ func ReadFromTailObj(tailObj *TailObj) {
 		}
 		tailObjMgr.MsgChan <- msg
 	}
+}
+
+func GetLine() *TailMessage {
+	tailMsg := &TailMessage{}
+	tailMsg = <-tailObjMgr.MsgChan
+	return tailMsg
 }
