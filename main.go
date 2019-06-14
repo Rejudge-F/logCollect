@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"github.com/astaxie/beego/logs"
 	"kafka-logMgr/models"
+	"kafka-logMgr/tailf"
 )
 
 var (
@@ -31,4 +32,17 @@ func main() {
 	logs.Debug("init all success\n")
 	logs.Debug("%v\n", string(confStr))
 
+	err = tailf.InitTailf(appConf.LogCollect, appConf.ChanSize)
+	if err != nil {
+		logs.Error("InitTailf failed", err)
+		return
+	}
+
+	err = ServerRun()
+	if err != nil {
+		logs.Error("Server start failed")
+		return
+	}
+
+	logs.Info("programa running success")
 }

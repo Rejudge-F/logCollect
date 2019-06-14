@@ -33,19 +33,24 @@ func (appConf *Config) LoadConfig(adapterType, filename string) (err error) {
 	}
 	appConf.LogPath = conf.String("LOG::LogPath")
 	appConf.LogLevel = ConvertLogLevel(conf.String("LOG::LogLevel"))
-
+	appConf.ChanSize, err = conf.Int("LOG::ChanSize")
+	err = appConf.LoadCollectConf(conf)
+	if err != nil {
+		panic("Load CollectConf faield")
+		return
+	}
 	return nil
 }
 
-func (appConf *Config) LoadCollectConf(configer config.Configer) (err error) {
+func (appConf *Config) LoadCollectConf(configure config.Configer) (err error) {
 	cc := CollectCofig{}
-	cc.LogPath = configer.String("COLLECTLOG::LogPath")
+	cc.LogPath = configure.String("COLLECTLOG::LogPath")
 	if len(cc.LogPath) == 0 {
 		return errors.New("invaild LogPath")
 	}
-	cc.LogLevel = ConvertLogLevel(configer.String("COLLECTLOG::LogLevel"))
-	if cc.LogLevel == 0 {
-		cc.LogLevel = ConvertLogLevel("Debug")
+	cc.Topic = configure.String("COLLECTLOG::Topic")
+	if len(cc.Topic) == 0 {
+		cc.Topic = "default"
 	}
 	appConf.LogCollect = append(appConf.LogCollect, cc)
 	return nil
