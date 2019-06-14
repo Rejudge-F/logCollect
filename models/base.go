@@ -2,10 +2,10 @@ package models
 
 import (
 	"encoding/json"
-	"errors"
 	"fmt"
 	"github.com/astaxie/beego/config"
 	"github.com/astaxie/beego/logs"
+	"strconv"
 )
 
 func ConvertLogLevel(logLevel string) int {
@@ -35,6 +35,9 @@ func (appConf *Config) LoadConfig(adapterType, filename string) (err error) {
 	appConf.LogPath = conf.String("LOG::LogPath")
 	appConf.LogLevel = ConvertLogLevel(conf.String("LOG::LogLevel"))
 	appConf.ChanSize, err = conf.Int("LOG::ChanSize")
+	if err != nil {
+		appConf.ChanSize = 100
+	}
 	appConf.KafkaIp = conf.String("KAFKA::ServerIp")
 
 	err = appConf.LoadCollectConf(conf)
@@ -46,16 +49,21 @@ func (appConf *Config) LoadConfig(adapterType, filename string) (err error) {
 }
 
 func (appConf *Config) LoadCollectConf(configure config.Configer) (err error) {
-	cc := CollectCofig{}
-	cc.LogPath = configure.String("COLLECTLOG::LogPath")
-	if len(cc.LogPath) == 0 {
-		return errors.New("invaild LogPath")
+	for i := 1; ; i++ {
+		cc := CollectCofig{}
+		path := "COLLECTLOG::CollectLogPath" + strconv.Itoa(i)
+		cc.LogPath = configure.String(path)
+		if len(cc.LogPath) == 0 {
+			break
+		}
+		topic := "COLLECTLOG::CollectLogTopic" + strconv.Itoa(i)
+		cc.Topic = configure.String(topic)
+		if len(cc.Topic) == 0 {
+			cc.Topic = "default"
+		}
+		appConf.LogCollect = append(appConf.LogCollect, cc)
 	}
-	cc.Topic = configure.String("COLLECTLOG::Topic")
-	if len(cc.Topic) == 0 {
-		cc.Topic = "default"
-	}
-	appConf.LogCollect = append(appConf.LogCollect, cc)
+
 	return nil
 
 }
