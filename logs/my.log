@@ -129,3 +129,90 @@
 
 2019/06/14 17:28:32.247 [I]  partition: 0, offset: 114
 
+2019/06/16 00:38:07.062 [E]  Init AsyncProducer failed
+2019/06/16 00:38:07.062 [E]  InitKafka failed
+2019/06/16 00:41:04.361 [D]  init all success
+
+2019/06/16 00:41:04.361 [D]  {
+ "LogPath": "./logs/my.log",
+ "LogLevel": 7,
+ "LogCollect": [
+ {
+ "LogPath": "./logs/collect.log",
+ "Topic": "test"
+ },
+ {
+ "LogPath": "./logs/collect2.log",
+ "Topic": "collect2"
+ }
+ ],
+ "ChanSize": 100,
+ "KafkaIp": "47.107.54.187:9092"
+ }
+
+2019/06/17 10:25:01.560 [D]  init all success
+
+2019/06/17 10:25:01.560 [D]  {
+ "LogPath": "./logs/my.log",
+ "LogLevel": 7,
+ "LogCollect": [
+ {
+ "LogPath": "./logs/collect.log",
+ "Topic": "test"
+ },
+ {
+ "LogPath": "./logs/collect2.log",
+ "Topic": "collect2"
+ }
+ ],
+ "ChanSize": 100,
+ "KafkaIp": "47.107.54.187:9092"
+ }
+
+2019/06/17 10:26:42.706 [E]  Send to kafka failed
+2019/06/17 10:26:42.706 [E]  Send to kafka failed
+2019/06/17 10:27:09.511 [E]  Send to kafka failed
+2019/06/17 10:27:09.511 [E]  Send to kafka failed
+2019/06/17 10:27:10.068 [E]  Send to kafka failed
+2019/06/17 10:27:10.068 [E]  Send to kafka failed
+2019/06/17 10:27:26.239 [E]  Send to kafka failed
+2019/06/17 10:27:26.239 [E]  Send to kafka failed
+2019/06/17 10:27:26.915 [E]  Send to kafka failed
+2019/06/17 10:27:26.915 [E]  Send to kafka failed
+2019/06/17 10:27:27.538 [E]  Send to kafka failed
+2019/06/17 10:27:27.538 [E]  Send to kafka failed
+2019/06/17 10:33:05.670 [I]  partition: 0, offset: 1
+
+2019/06/17 10:33:05.750 [I]  partition: 0, offset: 2
+
+2019/06/17 10:33:05.841 [I]  partition: 0, offset: 3
+
+2019/06/17 10:33:05.917 [I]  partition: 0, offset: 4
+
+2019/06/17 10:34:43.005 [D]  init all success
+
+2019/06/17 10:34:43.006 [D]  {
+ "LogPath": "./logs/my.log",
+ "LogLevel": 7,
+ "LogCollect": [
+ {
+ "LogPath": "./logs/collect.log",
+ "Topic": "test"
+ },
+ {
+ "LogPath": "./logs/collect2.log",
+ "Topic": "collect2"
+ }
+ ],
+ "ChanSize": 100,
+ "KafkaIp": "47.107.54.187:9092"
+ }
+
+2019/06/17 10:34:43.360 [I]  partition: 0, offset: 5
+
+2019/06/17 10:34:43.437 [I]  partition: 0, offset: 6
+
+2019/06/17 10:34:43.517 [I]  partition: 0, offset: 7
+
+2019/06/17 10:34:43.598 [I]  partition: 0, offset: 8
+
