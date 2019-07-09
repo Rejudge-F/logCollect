@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"github.com/astaxie/beego/logs"
 	etcd_client "go.etcd.io/etcd/clientv3"
-	"strings"
 	"time"
 )
 
@@ -31,25 +30,24 @@ func InitEtcd(addr []string, key string) error {
 	etcdClient = &EtcdClient{
 		client: cli,
 	}
-
-	if strings.HasSuffix(key, "/") == false {
-		key = fmt.Sprintf("%s%s", key, "/")
-	}
-
-	for _, ip := range localIpArray {
-		etcdKey := fmt.Sprintf("%s%s", key, ip)
-		logs.Info(etcdKey)
-		ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
-		resp, err := etcdClient.client.Get(ctx, etcdKey)
-		if err != nil {
-			logs.Error(fmt.Sprintf("%s: %v", "Etcd Get Key Failed", err))
-			continue
-		}
-		cancel()
-		logs.Debug(fmt.Sprintf("%v", resp))
-		for k, v := range resp.Kvs {
-			logs.Info(fmt.Sprintf("etcd: [key: %v] [v: %v]", k, v.Value))
-		}
-	}
 	return nil
+}
+
+func GetKey(key string) (s string, err error) {
+	s = ""
+	err = nil
+	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
+	resp, err := etcdClient.client.Get(ctx, key)
+	if err != nil {
+		logs.Error(fmt.Sprint("GetKey Failed: %v", err))
+		return
+	}
+	kvs := resp.Kvs
+	cancel()
+	for _, v := range kvs {
+		if string(v.Key) == key {
+			return string(v.Value), nil
+		}
+	}
+	return
 }

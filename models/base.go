@@ -5,7 +5,9 @@ import (
 	"fmt"
 	"github.com/astaxie/beego/config"
 	"github.com/astaxie/beego/logs"
+	"kafka-logMgr/etcd"
 	"strconv"
+	"strings"
 )
 
 func ConvertLogLevel(logLevel string) int {
@@ -40,13 +42,18 @@ func (appConf *Config) LoadConfig(adapterType, filename string) (err error) {
 		appConf.ChanSize = 100
 	}
 	appConf.KafkaIp = conf.String("KAFKA::ServerIp")
-
-	err = appConf.LoadCollectConf(conf)
+	appConf.LoadEtcdConf(conf)
+	err = etcd.InitEtcd(appConf.Etcd.Addr, appConf.Etcd.Key)
+	if err != nil {
+		logs.Error("Init Etcd Failed")
+		return
+	}
+	err = appConf.LoadCollectConf(etcd.LocalIpArray)
 	if err != nil {
 		panic("Load CollectConf faield")
 		return
 	}
-	appConf.LoadEtcdConf(conf)
+
 	jsonStr, err := json.MarshalIndent(appConf, "\t", "")
 	logs.Info(fmt.Sprintf("%v", string(jsonStr)))
 	return nil
@@ -66,22 +73,20 @@ func (appConf *Config) LoadEtcdConf(configure config.Configer) (err error) {
 	return nil
 }
 
-func (appConf *Config) LoadCollectConf(configure config.Configer) (err error) {
-	for i := 1; ; i++ {
-		cc := CollectConfig{}
-		path := "COLLECTLOG::CollectLogPath" + strconv.Itoa(i)
-		cc.LogPath = configure.String(path)
-		if len(cc.LogPath) == 0 {
-			break
-		}
-		topic := "COLLECTLOG::CollectLogTopic" + strconv.Itoa(i)
-		cc.Topic = configure.String(topic)
-		if len(cc.Topic) == 0 {
-			cc.Topic = "default"
-		}
-		appConf.LogCollect = append(appConf.LogCollect, cc)
+func (appConf *Config) LoadCollectConf(ip []string) (err error) {
+	if strings.HasSuffix(appConf.Etcd.Key, "/") == false {
+		appConf.Etcd.Key = fmt.Sprintf(appConf.Etcd.Key, "/")
 	}
-
+	for _, confIp := range ip {
+		key := fmt.Sprintf("%s%s", appConf.Etcd.Key, confIp)
+		collectStr, _ := etcd.GetKey(key)
+		var logCollectConf []CollectConfig
+		json.Unmarshal([]byte(collectStr), &logCollectConf)
+		for _, collect := range logCollectConf {
+			appConf.LogCollect = append(appConf.LogCollect, collect)
+			fmt.Println(collect)
+		}
+	}
 	return nil
 
 }

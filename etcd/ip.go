@@ -6,7 +6,7 @@ import (
 )
 
 var (
-	localIpArray []string
+	LocalIpArray []string
 )
 
 func init() {
@@ -19,10 +19,10 @@ func init() {
 		if ipNet, ok := addr.(*net.IPNet); ok && !ipNet.IP.IsLoopback() {
 			ip := ipNet.IP.To4()
 			if ip != nil {
-				localIpArray = append(localIpArray, ip.String())
+				LocalIpArray = append(LocalIpArray, ip.String())
 			}
 		}
 	}
-	logs.Debug(localIpArray)
+	logs.Debug(LocalIpArray)
 	logs.Warn("Get LocalIp success!")
 }

@@ -10,8 +10,8 @@ type Config struct {
 }
 
 type CollectConfig struct {
-	LogPath string
-	Topic   string
+	LogPath string `json:"logpath"`
+	Topic   string `json:"topic"`
 }
 
 type EtcdConfig struct {

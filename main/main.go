@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"github.com/astaxie/beego/logs"
-	"kafka-logMgr/etcd"
 	"kafka-logMgr/kafka"
 	"kafka-logMgr/models"
 	"kafka-logMgr/tailf"
@@ -36,12 +35,6 @@ func main() {
 	err = kafka.InitKafka(appConf.KafkaIp)
 	if err != nil {
 		logs.Error("InitKafka failed")
-		return
-	}
-
-	err = etcd.InitEtcd(appConf.Etcd.Addr, appConf.Etcd.Key)
-	if err != nil {
-		logs.Error("Init Etcd Failed")
 		return
 	}
 

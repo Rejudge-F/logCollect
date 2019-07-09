@@ -1,7 +1,11 @@
-2019/07/09 20:54:28.042 [I]  EtcdKey/192.168.137.233
-2019/07/09 20:54:28.048 [D]  &{cluster_id:14841639068965178418 member_id:10276657743932975437 revision:4 raft_term:2  [key:"EtcdKey/192.168.137.233" create_revision:2 mod_revision:4 version:3 value:"sampleValue" ] false 1}
-2019/07/09 20:54:28.048 [I]  etcd: [key: 0] [v: [115 97 109 112 108 101 86 97 108 117 101]]
-2019/07/09 20:54:28.048 [D]  init all success
+2019/07/09 22:18:08.399 [E]  InitTailf failed No Collect Config need to handle
+2019/07/09 22:19:06.624 [E]  InitTailf failed No Collect Config need to handle
+2019/07/09 22:22:22.829 [E]  InitTailf failed No Collect Config need to handle
+2019/07/09 22:23:54.222 [E]  InitTailf failed No Collect Config need to handle
+2019/07/09 22:25:21.965 [E]  InitTailf failed No Collect Config need to handle
+2019/07/09 22:26:13.438 [D]  init all success
 
-2019/07/09 20:54:28.065 [I]  partition: 0, offset: 23
+2019/07/09 22:26:13.474 [I]  partition: 0, offset: 26
+
+2019/07/09 22:26:30.465 [I]  partition: 0, offset: 43
 
