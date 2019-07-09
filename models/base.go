@@ -35,6 +35,7 @@ func (appConf *Config) LoadConfig(adapterType, filename string) (err error) {
 	appConf.LogPath = conf.String("LOG::LogPath")
 	appConf.LogLevel = ConvertLogLevel(conf.String("LOG::LogLevel"))
 	appConf.ChanSize, err = conf.Int("LOG::ChanSize")
+
 	if err != nil {
 		appConf.ChanSize = 100
 	}
@@ -45,12 +46,29 @@ func (appConf *Config) LoadConfig(adapterType, filename string) (err error) {
 		panic("Load CollectConf faield")
 		return
 	}
+	appConf.LoadEtcdConf(conf)
+	jsonStr, err := json.MarshalIndent(appConf, "\t", "")
+	logs.Info(fmt.Sprintf("%v", string(jsonStr)))
+	return nil
+}
+
+func (appConf *Config) LoadEtcdConf(configure config.Configer) (err error) {
+	etcdKey := configure.String("ETCD::EtcdKey")
+	appConf.Etcd.Key = etcdKey
+	for i := 1; ; i++ {
+		addrkey := "EtcdAddr" + strconv.Itoa(i)
+		addrValue := configure.String("ETCD::" + addrkey)
+		if len(addrValue) == 0 {
+			break
+		}
+		appConf.Etcd.Addr = append(appConf.Etcd.Addr, addrValue)
+	}
 	return nil
 }
 
 func (appConf *Config) LoadCollectConf(configure config.Configer) (err error) {
 	for i := 1; ; i++ {
-		cc := CollectCofig{}
+		cc := CollectConfig{}
 		path := "COLLECTLOG::CollectLogPath" + strconv.Itoa(i)
 		cc.LogPath = configure.String(path)
 		if len(cc.LogPath) == 0 {

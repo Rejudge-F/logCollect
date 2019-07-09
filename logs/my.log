@@ -1,21 +1,7 @@
-2019/06/14 17:21:24.333 [D]  init all success
+2019/07/09 16:47:56.476 [E]  Etcd Get Key Failed: context deadline exceeded
+2019/07/09 16:47:56.476 [D]  init all success
 
-2019/06/14 17:21:24.333 [D]  {
- "LogPath": "./logs/my.log",
- "LogLevel": 7,
- "LogCollect": [
- {
- "LogPath": "./logs/collect2.log",
- "Topic": "collect2"
- }
- ],
- "ChanSize": 100,
- "KafkaIp": "127.0.0.1:9092"
- }
-
-2019/06/14 17:23:40.042 [D]  init all success
-
-2019/06/14 17:23:40.042 [D]  {
+2019/07/09 16:47:56.476 [D]  {
  "LogPath": "./logs/my.log",
  "LogLevel": 7,
  "LogCollect": [
@@ -29,12 +15,22 @@
  }
  ],
  "ChanSize": 100,
- "KafkaIp": "127.0.0.1:9092"
+ "KafkaIp": "localhost:9092",
+ "Etcd": {
+ "Addr": [
+ "192.168.137.233:2379"
+ ],
+ "Key": ""
+ }
  }
 
-2019/06/14 17:24:03.239 [D]  init all success
+2019/07/09 16:47:56.540 [I]  partition: 0, offset: 14
 
-2019/06/14 17:24:03.239 [D]  {
+2019/07/09 16:50:35.737 [I]  /192.168.137.233
+2019/07/09 16:50:36.740 [E]  Etcd Get Key Failed: context deadline exceeded
+2019/07/09 16:50:36.740 [D]  init all success
+
+2019/07/09 16:50:36.740 [D]  {
  "LogPath": "./logs/my.log",
  "LogLevel": 7,
  "LogCollect": [
@@ -48,92 +44,22 @@
  }
  ],
  "ChanSize": 100,
- "KafkaIp": "127.0.0.1:9092"
+ "KafkaIp": "localhost:9092",
+ "Etcd": {
+ "Addr": [
+ "192.168.137.233:2379"
+ ],
+ "Key": ""
+ }
  }
 
-2019/06/14 17:26:18.830 [I]  partition: 0, offset: 0
+2019/07/09 16:50:36.770 [I]  partition: 0, offset: 15
 
-2019/06/14 17:26:26.375 [I]  partition: 0, offset: 107
+2019/07/09 16:52:02.523 [I]  EtcdKey/192.168.137.233
+2019/07/09 16:52:03.527 [E]  Etcd Get Key Failed: context deadline exceeded
+2019/07/09 16:52:03.527 [D]  init all success
 
-2019/06/14 17:26:54.201 [I]  partition: 0, offset: 108
-
-2019/06/14 17:26:54.413 [I]  partition: 0, offset: 1
-
-2019/06/14 17:27:06.696 [I]  partition: 1, offset: 0
-
-2019/06/14 17:27:06.698 [I]  partition: 2, offset: 0
-
-2019/06/14 17:27:06.739 [I]  partition: 0, offset: 109
-
-2019/06/14 17:27:19.274 [I]  partition: 0, offset: 110
-
-2019/06/14 17:27:19.276 [I]  partition: 0, offset: 111
-
-2019/06/14 17:27:34.515 [I]  partition: 3, offset: 0
-
-2019/06/14 17:27:34.516 [I]  partition: 2, offset: 1
-
-2019/06/14 17:27:46.798 [I]  partition: 1, offset: 1
-
-2019/06/14 17:27:46.805 [I]  partition: 0, offset: 2
-
-2019/06/14 17:27:46.808 [I]  partition: 6, offset: 0
-
-2019/06/14 17:28:05.343 [I]  partition: 7, offset: 0
-
-2019/06/14 17:28:05.345 [I]  partition: 0, offset: 3
-
-2019/06/14 17:28:05.346 [I]  partition: 7, offset: 1
-
-2019/06/14 17:28:05.348 [I]  partition: 2, offset: 2
-
-2019/06/14 17:28:10.362 [I]  partition: 3, offset: 1
-
-2019/06/14 17:28:10.363 [I]  partition: 3, offset: 2
-
-2019/06/14 17:28:10.366 [I]  partition: 7, offset: 2
-
-2019/06/14 17:28:10.369 [I]  partition: 4, offset: 0
-
-2019/06/14 17:28:10.371 [I]  partition: 6, offset: 1
-
-2019/06/14 17:28:13.376 [I]  partition: 7, offset: 3
-
-2019/06/14 17:28:13.378 [I]  partition: 2, offset: 3
-
-2019/06/14 17:28:13.380 [I]  partition: 7, offset: 4
-
-2019/06/14 17:28:13.383 [I]  partition: 0, offset: 4
-
-2019/06/14 17:28:13.386 [I]  partition: 1, offset: 2
-
-2019/06/14 17:28:13.390 [I]  partition: 1, offset: 3
-
-2019/06/14 17:28:16.133 [I]  partition: 4, offset: 1
-
-2019/06/14 17:28:16.135 [I]  partition: 1, offset: 4
-
-2019/06/14 17:28:16.138 [I]  partition: 3, offset: 3
-
-2019/06/14 17:28:16.140 [I]  partition: 2, offset: 4
-
-2019/06/14 17:28:16.141 [I]  partition: 4, offset: 2
-
-2019/06/14 17:28:16.143 [I]  partition: 0, offset: 5
-
-2019/06/14 17:28:16.146 [I]  partition: 4, offset: 3
-
-2019/06/14 17:28:32.244 [I]  partition: 0, offset: 112
-
-2019/06/14 17:28:32.245 [I]  partition: 0, offset: 113
-
-2019/06/14 17:28:32.247 [I]  partition: 0, offset: 114
-
-2019/06/16 00:38:07.062 [E]  Init AsyncProducer failed
-2019/06/16 00:38:07.062 [E]  InitKafka failed
-2019/06/16 00:41:04.361 [D]  init all success
-
-2019/06/16 00:41:04.361 [D]  {
+2019/07/09 16:52:03.527 [D]  {
  "LogPath": "./logs/my.log",
  "LogLevel": 7,
  "LogCollect": [
@@ -147,12 +73,22 @@
  }
  ],
  "ChanSize": 100,
- "KafkaIp": "47.107.54.187:9092"
+ "KafkaIp": "localhost:9092",
+ "Etcd": {
+ "Addr": [
+ "192.168.137.233:2379"
+ ],
+ "Key": "EtcdKey/"
+ }
  }
 
-2019/06/17 10:25:01.560 [D]  init all success
+2019/07/09 16:52:03.609 [I]  partition: 0, offset: 16
 
-2019/06/17 10:25:01.560 [D]  {
+2019/07/09 16:52:51.888 [I]  EtcdKey/192.168.137.233
+2019/07/09 16:52:52.893 [E]  Etcd Get Key Failed: context deadline exceeded
+2019/07/09 16:52:52.893 [D]  init all success
+
+2019/07/09 16:52:52.893 [D]  {
  "LogPath": "./logs/my.log",
  "LogLevel": 7,
  "LogCollect": [
@@ -166,32 +102,22 @@
  }
  ],
  "ChanSize": 100,
- "KafkaIp": "47.107.54.187:9092"
+ "KafkaIp": "localhost:9092",
+ "Etcd": {
+ "Addr": [
+ "192.168.137.233:2379"
+ ],
+ "Key": "EtcdKey/"
+ }
  }
 
-2019/06/17 10:26:42.706 [E]  Send to kafka failed
-2019/06/17 10:26:42.706 [E]  Send to kafka failed
-2019/06/17 10:27:09.511 [E]  Send to kafka failed
-2019/06/17 10:27:09.511 [E]  Send to kafka failed
-2019/06/17 10:27:10.068 [E]  Send to kafka failed
-2019/06/17 10:27:10.068 [E]  Send to kafka failed
-2019/06/17 10:27:26.239 [E]  Send to kafka failed
-2019/06/17 10:27:26.239 [E]  Send to kafka failed
-2019/06/17 10:27:26.915 [E]  Send to kafka failed
-2019/06/17 10:27:26.915 [E]  Send to kafka failed
-2019/06/17 10:27:27.538 [E]  Send to kafka failed
-2019/06/17 10:27:27.538 [E]  Send to kafka failed
-2019/06/17 10:33:05.670 [I]  partition: 0, offset: 1
+2019/07/09 16:52:52.955 [I]  partition: 0, offset: 17
 
-2019/06/17 10:33:05.750 [I]  partition: 0, offset: 2
+2019/07/09 16:54:08.070 [I]  EtcdKey/192.168.137.233
+2019/07/09 16:54:18.075 [E]  Etcd Get Key Failed: context deadline exceeded
+2019/07/09 16:54:18.075 [D]  init all success
 
-2019/06/17 10:33:05.841 [I]  partition: 0, offset: 3
-
-2019/06/17 10:33:05.917 [I]  partition: 0, offset: 4
-
-2019/06/17 10:34:43.005 [D]  init all success
-
-2019/06/17 10:34:43.006 [D]  {
+2019/07/09 16:54:18.075 [D]  {
  "LogPath": "./logs/my.log",
  "LogLevel": 7,
  "LogCollect": [
@@ -205,14 +131,51 @@
  }
  ],
  "ChanSize": 100,
- "KafkaIp": "47.107.54.187:9092"
+ "KafkaIp": "localhost:9092",
+ "Etcd": {
+ "Addr": [
+ "192.168.137.233:2379"
+ ],
+ "Key": "EtcdKey/"
+ }
  }
 
-2019/06/17 10:34:43.360 [I]  partition: 0, offset: 5
+2019/07/09 16:54:18.101 [I]  partition: 0, offset: 18
 
-2019/06/17 10:34:43.437 [I]  partition: 0, offset: 6
+2019/07/09 16:55:26.186 [I]  EtcdKey/192.168.137.233
+2019/07/09 16:55:26.199 [D]  &{cluster_id:14841639068965178418 member_id:10276657743932975437 revision:4 raft_term:2  [key:"EtcdKey/192.168.137.233" create_revision:2 mod_revision:4 version:3 value:"sampleValue" ] false 1}
+2019/07/09 16:55:26.199 [I]  etcd: [key: 0] [v: key:"EtcdKey/192.168.137.233" create_revision:2 mod_revision:4 version:3 value:"sampleValue" ]
+2019/07/09 16:55:26.199 [D]  init all success
 
-2019/06/17 10:34:43.517 [I]  partition: 0, offset: 7
+2019/07/09 16:55:26.199 [D]  {
+ "LogPath": "./logs/my.log",
+ "LogLevel": 7,
+ "LogCollect": [
+ {
+ "LogPath": "./logs/collect.log",
+ "Topic": "test"
+ },
+ {
+ "LogPath": "./logs/collect2.log",
+ "Topic": "collect2"
+ }
+ ],
+ "ChanSize": 100,
+ "KafkaIp": "localhost:9092",
+ "Etcd": {
+ "Addr": [
+ "localhost:2379"
+ ],
+ "Key": "EtcdKey/"
+ }
+ }
 
-2019/06/17 10:34:43.598 [I]  partition: 0, offset: 8
+2019/07/09 16:55:26.211 [I]  partition: 0, offset: 19
+
+2019/07/09 16:58:46.361 [I]  EtcdKey/192.168.137.233
+2019/07/09 16:58:46.370 [D]  &{cluster_id:14841639068965178418 member_id:10276657743932975437 revision:4 raft_term:2  [key:"EtcdKey/192.168.137.233" create_revision:2 mod_revision:4 version:3 value:"sampleValue" ] false 1}
+2019/07/09 16:58:46.370 [I]  etcd: [key: 0] [v: [115 97 109 112 108 101 86 97 108 117 101]]
+2019/07/09 16:58:46.370 [D]  init all success
+
+2019/07/09 16:58:46.410 [I]  partition: 0, offset: 20
 

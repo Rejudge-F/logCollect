@@ -1,9 +1,9 @@
 package main
 
 import (
-	"encoding/json"
 	"fmt"
 	"github.com/astaxie/beego/logs"
+	"kafka-logMgr/etcd"
 	"kafka-logMgr/kafka"
 	"kafka-logMgr/models"
 	"kafka-logMgr/tailf"
@@ -26,10 +26,6 @@ func main() {
 		fmt.Println("InitLogger failed")
 		return
 	}
-	confStr, err := json.MarshalIndent(appConf, " ", "")
-	if err != nil {
-		fmt.Println("json failed")
-	}
 
 	err = tailf.InitTailf(appConf.LogCollect, appConf.ChanSize)
 	if err != nil {
@@ -42,8 +38,14 @@ func main() {
 		logs.Error("InitKafka failed")
 		return
 	}
+
+	err = etcd.InitEtcd(appConf.Etcd.Addr, appConf.Etcd.Key)
+	if err != nil {
+		logs.Error("Init Etcd Failed")
+		return
+	}
+
 	logs.Debug("init all success\n")
-	logs.Debug("%v\n", string(confStr))
 
 	err = ServerRun()
 	if err != nil {

@@ -13,7 +13,7 @@ var (
 
 type TailObj struct {
 	Tail *tail.Tail
-	Conf models.CollectCofig
+	Conf models.CollectConfig
 }
 
 type TailMessage struct {
@@ -26,7 +26,7 @@ type TailObjMgr struct {
 	MsgChan chan *TailMessage
 }
 
-func InitTailf(config []models.CollectCofig, ChanSize int) error {
+func InitTailf(config []models.CollectConfig, ChanSize int) error {
 	if len(config) == 0 {
 		return errors.New("No Collect Config need to handle")
 	}

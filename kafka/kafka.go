@@ -26,6 +26,7 @@ func InitKafka(serverIp string) (err error) {
 }
 
 func SendToKafka(msg, topic string) error {
+	//fmt.Println(topic, " ", msg)
 	produceMsg := &sarama.ProducerMessage{
 		Topic: topic,
 		Value: sarama.StringEncoder(msg),
