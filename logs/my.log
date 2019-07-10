@@ -9,3 +9,54 @@
 
 2019/07/09 22:26:30.465 [I]  partition: 0, offset: 43
 
+2019/07/10 21:00:49.394 [E]  InitTailf failed No Collect Config need to handle
+2019/07/10 21:01:41.973 [D]  init all success
+
+2019/07/10 21:01:42.389 [I]  partition: 0, offset: 27
+
+2019/07/10 21:01:42.394 [I]  partition: 0, offset: 44
+
+2019/07/10 21:04:09.373 [D]  init all success
+
+2019/07/10 21:04:10.404 [I]  partition: 0, offset: 45
+
+2019/07/10 21:05:06.143 [D]  init all success
+
+2019/07/10 21:05:06.331 [I]  partition: 0, offset: 46
+
+2019/07/10 21:05:06.338 [I]  partition: 0, offset: 28
+
+2019/07/10 21:07:09.066 [D]  init all success
+
+2019/07/10 21:07:09.090 [I]  partition: 0, offset: 47
+
+2019/07/10 21:07:09.096 [I]  partition: 0, offset: 29
+
+2019/07/10 21:07:49.287 [D]  init all success
+
+2019/07/10 21:08:14.008 [I]  partition: 0, offset: 48
+
+2019/07/10 21:09:07.535 [I]  partition: 0, offset: 30
+
+2019/07/10 21:13:52.352 [E]  InitTailf failed No Collect Config need to handle
+2019/07/10 21:14:23.312 [E]  InitTailf failed No Collect Config need to handle
+2019/07/10 21:14:40.046 [D]  init all success
+
+2019/07/10 21:14:40.072 [I]  partition: 0, offset: 31
+
+2019/07/10 21:14:40.074 [I]  partition: 0, offset: 49
+
+2019/07/10 21:15:49.328 [E]  InitTailf failed No Collect Config need to handle
+2019/07/10 21:16:02.337 [D]  init all success
+
+2019/07/10 21:16:02.356 [I]  partition: 0, offset: 50
+
+2019/07/10 21:16:02.360 [I]  partition: 0, offset: 32
+
+2019/07/10 21:16:45.053 [E]  InitTailf failed No Collect Config need to handle
+2019/07/10 21:17:10.668 [D]  init all success
+
+2019/07/10 21:17:10.720 [I]  partition: 0, offset: 33
+
+2019/07/10 21:17:10.725 [I]  partition: 0, offset: 51
+

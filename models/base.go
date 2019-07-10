@@ -79,6 +79,7 @@ func (appConf *Config) LoadCollectConf(ip []string) (err error) {
 	}
 	for _, confIp := range ip {
 		key := fmt.Sprintf("%s%s", appConf.Etcd.Key, confIp)
+		etcd.EtcdCli.EtcdKeys = append(etcd.EtcdCli.EtcdKeys, key)
 		collectStr, _ := etcd.GetKey(key)
 		var logCollectConf []CollectConfig
 		json.Unmarshal([]byte(collectStr), &logCollectConf)
@@ -87,6 +88,9 @@ func (appConf *Config) LoadCollectConf(ip []string) (err error) {
 			fmt.Println(collect)
 		}
 	}
+
+	etcd.InitEtcdWatch()
+
 	return nil
 
 }

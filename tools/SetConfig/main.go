@@ -10,7 +10,7 @@ import (
 )
 
 var (
-	etcdKey = "EtcdKey/192.168.137.233"
+	etcdKey = "EtcdKey/192.168.137.252"
 )
 
 func SetLogConfToEtcd() error {
@@ -45,6 +45,8 @@ func SetLogConfToEtcd() error {
 		return err
 	}
 	cancel()
+	ctx, cancel = context.WithTimeout(context.Background(), time.Second)
+	//cli.Delete(ctx, etcdKey)
 	return nil
 }
 
