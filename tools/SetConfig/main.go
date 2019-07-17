@@ -10,19 +10,19 @@ import (
 )
 
 var (
-	etcdKey = "EtcdKey/192.168.137.252"
+	etcdKey = "EtcdKey/192.168.116.81"
 )
 
 func SetLogConfToEtcd() error {
 	cli, err := etcd_client.New(etcd_client.Config{
-		Endpoints:   []string{"localhost:2379"},
+		Endpoints:   []string{"47.107.54.187:2379"},
 		DialTimeout: 2 * time.Second,
 	})
 	if err != nil {
 		fmt.Println("Etcd Create New Client Failed: ", err)
 		return err
 	}
-	fmt.Println("Connect Etcd Success!")
+
 	defer cli.Close()
 	var collectConf []models.CollectConfig
 	collectConf = append(collectConf, models.CollectConfig{
@@ -38,15 +38,16 @@ func SetLogConfToEtcd() error {
 		fmt.Println("json Faild: ", err)
 		return err
 	}
-	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	_, err = cli.Put(ctx, etcdKey, string(confStr))
 	if err != nil {
-		fmt.Println(err)
+		fmt.Println("TLE: ", err)
 		return err
 	}
 	cancel()
 	ctx, cancel = context.WithTimeout(context.Background(), time.Second)
 	//cli.Delete(ctx, etcdKey)
+	fmt.Println("Connect Etcd Success!")
 	return nil
 }
 

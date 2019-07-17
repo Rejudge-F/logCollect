@@ -28,8 +28,7 @@ func main() {
 
 	err = tailf.InitTailf(appConf.LogCollect, appConf.ChanSize)
 	if err != nil {
-		logs.Error("InitTailf failed", err)
-		return
+		logs.Info("No file need to tail.")
 	}
 
 	err = kafka.InitKafka(appConf.KafkaIp)

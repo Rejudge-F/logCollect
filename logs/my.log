@@ -60,3 +60,12 @@
 
 2019/07/10 21:17:10.725 [I]  partition: 0, offset: 51
 
+2019/07/17 16:57:11.359 [E]  InitTailf failed No Collect Config need to handle
+2019/07/17 17:03:53.088 [E]  InitTailf failed No Collect Config need to handle
+2019/07/17 17:05:33.243 [E]  InitTailf failed No Collect Config need to handle
+2019/07/17 17:12:15.638 [I]  No file need to tail.
+2019/07/17 17:12:15.709 [D]  init all success
+
+2019/07/17 17:13:54.423 [I]  No file need to tail.
+2019/07/17 17:13:54.504 [D]  init all success
+

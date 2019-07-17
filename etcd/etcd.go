@@ -56,6 +56,7 @@ func GetKey(key string) (s string, err error) {
 }
 
 func InitEtcdWatch() {
+	logs.Info("Start Watch Etcd.")
 	for _, key := range EtcdCli.EtcdKeys {
 		go watchKey(key)
 	}

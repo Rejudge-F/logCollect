@@ -24,5 +24,5 @@ func init() {
 		}
 	}
 	logs.Debug(LocalIpArray)
-	logs.Warn("Get LocalIp success!")
+	logs.Info("Get LocalIp success!")
 }

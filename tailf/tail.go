@@ -27,6 +27,11 @@ type TailObjMgr struct {
 }
 
 func InitTailf(config []models.CollectConfig, ChanSize int) error {
+	tailObjMgr = &TailObjMgr{
+		Tails:   make([]*TailObj, 2),
+		MsgChan: make(chan *TailMessage, ChanSize),
+	}
+
 	if len(config) == 0 {
 		return errors.New("No Collect Config need to handle")
 	}
@@ -35,11 +40,6 @@ func InitTailf(config []models.CollectConfig, ChanSize int) error {
 	conf.Poll = true
 	conf.ReOpen = true
 	conf.Follow = true
-
-	tailObjMgr = &TailObjMgr{
-		Tails:   make([]*TailObj, 2),
-		MsgChan: make(chan *TailMessage, ChanSize),
-	}
 
 	for _, v := range config {
 		tails, err := tail.TailFile(v.LogPath, conf)
