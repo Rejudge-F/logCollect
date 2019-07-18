@@ -9,29 +9,31 @@ import (
 )
 
 var (
-	appConf models.Config
+	AppConf models.Config
 )
 
 func main() {
 	filename := "../conf/my.conf"
 	adapterType := "ini"
-	err := appConf.LoadConfig(adapterType, filename)
+	err := AppConf.LoadConfig(adapterType, filename)
 	if err != nil {
 		fmt.Println("LoadConfig failed", err)
 		return
 	}
-	err = appConf.InitLogger()
+	err = AppConf.InitLogger()
 	if err != nil {
 		fmt.Println("InitLogger failed")
 		return
 	}
-
-	err = tailf.InitTailf(appConf.LogCollect, appConf.ChanSize)
-	if err != nil {
-		logs.Info("No file need to tail.")
+	err = tailf.InitTailf(nil, AppConf.ChanSize)
+	for _, v := range AppConf.LogCollect {
+		err = tailf.InitTailf(v, AppConf.ChanSize)
+		if err != nil {
+			logs.Info("No file need to tail.")
+		}
 	}
 
-	err = kafka.InitKafka(appConf.KafkaIp)
+	err = kafka.InitKafka(AppConf.KafkaIp)
 	if err != nil {
 		logs.Error("InitKafka failed")
 		return

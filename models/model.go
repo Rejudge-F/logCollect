@@ -3,7 +3,7 @@ package models
 type Config struct {
 	LogPath    string
 	LogLevel   int
-	LogCollect []CollectConfig
+	LogCollect map[string][]CollectConfig
 	ChanSize   int
 	KafkaIp    string
 	Etcd       EtcdConfig

@@ -84,7 +84,7 @@ func (appConf *Config) LoadCollectConf(ip []string) (err error) {
 		var logCollectConf []CollectConfig
 		json.Unmarshal([]byte(collectStr), &logCollectConf)
 		for _, collect := range logCollectConf {
-			appConf.LogCollect = append(appConf.LogCollect, collect)
+			appConf.LogCollect[key] = append(appConf.LogCollect[key], collect)
 			fmt.Println(collect)
 		}
 	}

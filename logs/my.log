@@ -69,3 +69,45 @@
 2019/07/17 17:13:54.423 [I]  No file need to tail.
 2019/07/17 17:13:54.504 [D]  init all success
 
+2019/07/18 10:34:31.687 [E]  Init AsyncProducer failed
+2019/07/18 10:34:31.687 [E]  InitKafka failed
+2019/07/18 10:37:46.350 [D]  init all success
+
+2019/07/18 10:37:46.556 [I]  partition: 0, offset: 11
+
+2019/07/18 10:37:46.998 [I]  partition: 0, offset: 0
+
+2019/07/18 10:41:20.759 [I]  No file need to tail.
+2019/07/18 10:41:20.877 [D]  init all success
+
+2019/07/18 10:44:39.702 [I]  No file need to tail.
+2019/07/18 10:44:39.777 [D]  init all success
+
+2019/07/18 11:00:44.615 [I]  No file need to tail.
+2019/07/18 11:00:44.696 [D]  init all success
+
+2019/07/18 11:03:47.446 [I]  No file need to tail.
+2019/07/18 11:03:47.521 [D]  init all success
+
+2019/07/18 11:12:51.538 [D]  init all success
+
+2019/07/18 11:16:28.388 [D]  init all success
+
+2019/07/18 11:16:47.196 [D]  init all success
+
+2019/07/18 11:17:51.286 [D]  init all success
+
+2019/07/18 11:22:29.025 [D]  init all success
+
+2019/07/18 11:24:50.201 [D]  init all success
+
+2019/07/18 11:25:27.528 [D]  init all success
+
+2019/07/18 12:11:11.980 [D]  init all success
+
+2019/07/18 12:12:58.013 [D]  init all success
+
+2019/07/18 12:24:01.626 [D]  init all success
+
+2019/07/18 12:26:37.755 [D]  init all success
+

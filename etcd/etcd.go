@@ -72,12 +72,15 @@ func watchKey(key string) error {
 		return err
 	}
 	for {
-
 		resp := cli.Watch(context.Background(), key)
-
 		for msg := range resp {
 			for _, ev := range msg.Events {
 				fmt.Println(ev.Type, " ", string(ev.Kv.Key), " ", string(ev.Kv.Value))
+				//if ev.Type == etcd_client.EventTypeDelete {
+				//	DeleteCollect(string(ev.Kv.Key), string(ev.Kv.Value))
+				//} else if ev.Type == etcd_client.EventTypePut {
+				//	UpdateCollect(string(ev.Kv.Key), string(ev.Kv.Value))
+				//}
 			}
 		}
 	}

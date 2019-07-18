@@ -38,7 +38,7 @@ func SetLogConfToEtcd() error {
 		fmt.Println("json Faild: ", err)
 		return err
 	}
-	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	_, err = cli.Put(ctx, etcdKey, string(confStr))
 	if err != nil {
 		fmt.Println("TLE: ", err)
