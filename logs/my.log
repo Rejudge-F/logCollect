@@ -409,3 +409,23 @@
 
 2019/07/18 15:42:57.495 [I]  partition: 0, offset: 76
 
+2019/07/18 16:34:39.306 [D]  init all success
+
+2019/07/18 16:34:39.379 [I]  partition: 0, offset: 49
+
+2019/07/18 16:34:39.417 [I]  partition: 0, offset: 50
+
+2019/07/18 16:34:39.455 [I]  partition: 0, offset: 51
+
+2019/07/18 16:34:39.492 [I]  partition: 0, offset: 52
+
+2019/07/18 16:36:45.683 [D]  init all success
+
+2019/07/18 16:36:45.755 [I]  partition: 0, offset: 53
+
+2019/07/18 16:36:45.792 [I]  partition: 0, offset: 54
+
+2019/07/18 16:36:45.829 [I]  partition: 0, offset: 55
+
+2019/07/18 16:36:45.866 [I]  partition: 0, offset: 56
+

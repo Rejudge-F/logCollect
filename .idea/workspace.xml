@@ -4,14 +4,8 @@
     <list default="true" id="b9aedbf6-e012-4176-9a91-08f293c2ba22" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/go_build_kafka_logMgr_main.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/go_build_kafka_logMgr_main.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etcd/etcd.go" beforeDir="false" afterPath="$PROJECT_DIR$/etcd/etcd.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka/kafka.go" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/kafka.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/collect.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/collect.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/collect2.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/collect2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/my.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/my.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/my.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/my.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/logic.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/logic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailf/tail.go" beforeDir="false" afterPath="$PROJECT_DIR$/tailf/tail.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools/SetConfig/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/tools/SetConfig/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools/bin/go_build_kafka_logMgr_tools_SetConfig.exe" beforeDir="false" afterPath="$PROJECT_DIR$/tools/bin/go_build_kafka_logMgr_tools_SetConfig.exe" afterDir="false" />
     </list>
@@ -29,7 +23,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
+            <state relative-caret-position="399">
               <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
               <folding>
                 <element signature="e#14#131#0" expanded="true" />
@@ -41,25 +35,43 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tailf/tail.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
+            <state relative-caret-position="2261">
               <caret line="129" column="48" selection-start-line="129" selection-start-column="48" selection-end-line="129" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tools/SetConfig/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+            <state relative-caret-position="304">
+              <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
               <folding>
-                <element signature="e#14#130#0" expanded="true" />
+                <element signature="e#14#113#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/my.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/go.etcd.io/etcd/clientv3/kv.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/logs/collect.log">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -104,7 +116,6 @@
         <option value="$PROJECT_DIR$/tools/main.go" />
         <option value="$PROJECT_DIR$/logs/my.log" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/conf/my.conf" />
         <option value="$PROJECT_DIR$/etcd/ip.go" />
         <option value="$PROJECT_DIR$/common/common.go" />
         <option value="$PROJECT_DIR$/models/configure.go" />
@@ -115,9 +126,10 @@
         <option value="$PROJECT_DIR$/models/logic.go" />
         <option value="$PROJECT_DIR$/main/main.go" />
         <option value="$PROJECT_DIR$/tailf/tail.go" />
-        <option value="$PROJECT_DIR$/tools/SetConfig/main.go" />
         <option value="$PROJECT_DIR$/logs/collect2.log" />
         <option value="$PROJECT_DIR$/logs/collect.log" />
+        <option value="$PROJECT_DIR$/tools/SetConfig/main.go" />
+        <option value="$PROJECT_DIR$/conf/my.conf" />
       </list>
     </option>
   </component>
@@ -127,7 +139,7 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="974" />
@@ -142,6 +154,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -152,22 +165,12 @@
             <path>
               <item name="kafka-logMgr" type="b2602c69:ProjectViewProjectNode" />
               <item name="kafka-logMgr" type="462c0819:PsiDirectoryNode" />
-              <item name="etcd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kafka-logMgr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kafka-logMgr" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kafka-logMgr" type="b2602c69:ProjectViewProjectNode" />
               <item name="kafka-logMgr" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kafka-logMgr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kafka-logMgr" type="462c0819:PsiDirectoryNode" />
-              <item name="tailf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kafka-logMgr" type="b2602c69:ProjectViewProjectNode" />
@@ -184,7 +187,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -258,7 +260,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49882352" visible="true" weight="0.10341151" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49882352" visible="true" weight="0.10554371" />
       <window_info id="Structure" order="1" sideWeight="0.5011765" side_tool="true" weight="0.19027181" />
       <window_info id="Favorites" order="2" sideWeight="0.5011765" side_tool="true" weight="0.19027181" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -271,7 +273,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32863188" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" weight="0.26030368" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" weight="0.25921908" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.3275488" />
       <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -314,7 +316,6 @@
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/tailf/tail.go</url>
           <line>136</line>
-          <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
@@ -329,13 +330,6 @@
     <entry file="file://$PROJECT_DIR$/kafka_main/main.go" />
     <entry file="file://$PROJECT_DIR$/kafka_main/logic.go" />
     <entry file="file://$PROJECT_DIR$/tools/main.go" />
-    <entry file="file://$PROJECT_DIR$/vendor/go.etcd.io/etcd/clientv3/kv.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/go.etcd.io/etcd/etcdserver/etcdserverpb/rpc.pb.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -382,13 +376,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
           <caret line="72" column="45" lean-forward="true" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/my.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -537,9 +524,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/logs/collect2.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
+        <state relative-caret-position="399">
           <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
           <folding>
             <element signature="e#14#131#0" expanded="true" />
@@ -549,30 +543,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tailf/tail.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
+        <state relative-caret-position="2261">
           <caret line="129" column="48" selection-start-line="129" selection-start-column="48" selection-end-line="129" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/collect2.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/SetConfig/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
-          <folding>
-            <element signature="e#14#130#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logs/collect.log">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/go.etcd.io/etcd/clientv3/kv.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/my.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/SetConfig/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+          <folding>
+            <element signature="e#14#113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
