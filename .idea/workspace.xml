@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9aedbf6-e012-4176-9a91-08f293c2ba22" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/go_build_kafka_logMgr_main.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/go_build_kafka_logMgr_main.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/my.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/my.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/collect.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/collect.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/collect2.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/collect2.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/my.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/my.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/SetConfig/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/tools/SetConfig/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/bin/go_build_kafka_logMgr_tools_SetConfig.exe" beforeDir="false" afterPath="$PROJECT_DIR$/tools/bin/go_build_kafka_logMgr_tools_SetConfig.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailf/tail.go" beforeDir="false" afterPath="$PROJECT_DIR$/tailf/tail.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,20 +36,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tailf/tail.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2261">
-              <caret line="129" column="48" selection-start-line="129" selection-start-column="48" selection-end-line="129" selection-end-column="48" />
+            <state relative-caret-position="188">
+              <caret line="128" column="29" selection-start-line="128" selection-start-column="18" selection-end-line="128" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tools/SetConfig/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+            <state relative-caret-position="228">
+              <caret line="12" column="39" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="39" />
               <folding>
                 <element signature="e#14#113#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logs/collect.log">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/logs/collect2.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -60,20 +75,6 @@
               <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/go.etcd.io/etcd/clientv3/kv.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logs/collect.log">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -90,6 +91,7 @@
       <find>appConf</find>
       <find>tailObjMgr</find>
       <find>tailObjManager</find>
+      <find>fmt.Println</find>
     </findStrings>
     <replaceStrings>
       <replace>AppConf</replace>
@@ -125,11 +127,11 @@
         <option value="$PROJECT_DIR$/kafka/kafka.go" />
         <option value="$PROJECT_DIR$/models/logic.go" />
         <option value="$PROJECT_DIR$/main/main.go" />
-        <option value="$PROJECT_DIR$/tailf/tail.go" />
-        <option value="$PROJECT_DIR$/logs/collect2.log" />
-        <option value="$PROJECT_DIR$/logs/collect.log" />
         <option value="$PROJECT_DIR$/tools/SetConfig/main.go" />
         <option value="$PROJECT_DIR$/conf/my.conf" />
+        <option value="$PROJECT_DIR$/tailf/tail.go" />
+        <option value="$PROJECT_DIR$/logs/collect.log" />
+        <option value="$PROJECT_DIR$/logs/collect2.log" />
       </list>
     </option>
   </component>
@@ -139,7 +141,7 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="974" />
@@ -165,12 +167,12 @@
             <path>
               <item name="kafka-logMgr" type="b2602c69:ProjectViewProjectNode" />
               <item name="kafka-logMgr" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kafka-logMgr" type="b2602c69:ProjectViewProjectNode" />
               <item name="kafka-logMgr" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="tailf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kafka-logMgr" type="b2602c69:ProjectViewProjectNode" />
@@ -228,7 +230,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build kafka-logMgr/tools/SetConfig">
+  <component name="RunManager" selected="Go Build.go build kafka-logMgr/main">
     <configuration name="go build kafka-logMgr/main" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="kafka-logMgr" />
       <working_directory value="$PROJECT_DIR$/bin" />
@@ -273,8 +275,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32863188" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" weight="0.25921908" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.3275488" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4989339" weight="0.25813448" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.25813448" />
       <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -309,17 +311,6 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/tailf/tail.go</url>
-          <line>136</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///usr/local/Cellar/go/1.11.5/libexec/src/net/ip.go" />
@@ -524,13 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/collect2.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -541,15 +525,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tailf/tail.go">
+    <entry file="file://$PROJECT_DIR$/tools/SetConfig/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2261">
-          <caret line="129" column="48" selection-start-line="129" selection-start-column="48" selection-end-line="129" selection-end-column="48" />
+        <state relative-caret-position="228">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="39" />
+          <folding>
+            <element signature="e#14#113#0" expanded="true" />
+          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/collect.log">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/go.etcd.io/etcd/clientv3/kv.go">
       <provider selected="true" editor-type-id="text-editor">
@@ -565,13 +549,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools/SetConfig/main.go">
+    <entry file="file://$PROJECT_DIR$/tailf/tail.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-          <folding>
-            <element signature="e#14#113#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="188">
+          <caret line="128" column="29" selection-start-line="128" selection-start-column="18" selection-end-line="128" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/collect.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/collect2.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>

@@ -3,7 +3,6 @@ package tailf
 import (
 	"encoding/json"
 	"errors"
-	"fmt"
 	"github.com/astaxie/beego/logs"
 	"github.com/hpcloud/tail"
 	etcd_client "go.etcd.io/etcd/clientv3"
@@ -57,7 +56,7 @@ func ReadFromTailObj(tailObj *TailObj) {
 		if tailObj.Shut {
 			break
 		}
-		fmt.Println(tailObj)
+		//fmt.Println(tailObj)
 		line, ok := <-tailObj.Tail.Lines
 		if !ok {
 			logs.Error("Read failed from %s\n", tailObj.Conf.LogPath)
@@ -101,7 +100,7 @@ func UpdateCollect(key, value string) {
 	for _, addConfig := range configs {
 		exist := false
 		if TailObjManager.Tails != nil {
-			fmt.Println(TailObjManager.Tails)
+			//fmt.Println(TailObjManager.Tails)
 			for _, config := range TailObjManager.Tails {
 				if config == nil {
 					continue
@@ -127,7 +126,7 @@ func DeleteCollect(key string, collects map[string][]models.CollectConfig) {
 			}
 			if delConfig.LogPath == config.Conf.LogPath {
 				config.Shut = true
-				fmt.Println("delconfig", config)
+				//fmt.Println("delconfig", config)
 				break
 			}
 		}

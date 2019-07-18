@@ -429,3 +429,485 @@
 
 2019/07/18 16:36:45.866 [I]  partition: 0, offset: 56
 
+2019/07/18 16:52:46.304 [D]  init all success
+
+2019/07/18 16:52:46.383 [I]  partition: 0, offset: 57
+
+2019/07/18 16:52:46.423 [I]  partition: 0, offset: 58
+
+2019/07/18 16:52:46.463 [I]  partition: 0, offset: 59
+
+2019/07/18 16:52:46.503 [I]  partition: 0, offset: 60
+
+2019/07/18 16:53:37.145 [I]  partition: 0, offset: 61
+
+2019/07/18 16:55:36.608 [I]  partition: 0, offset: 77
+
+2019/07/18 16:56:40.176 [D]  init all success
+
+2019/07/18 16:56:50.450 [I]  partition: 0, offset: 78
+
+2019/07/18 16:56:51.915 [I]  partition: 0, offset: 79
+
+2019/07/18 16:56:51.950 [I]  partition: 0, offset: 80
+
+2019/07/18 16:56:53.419 [I]  partition: 0, offset: 81
+
+2019/07/18 16:56:53.455 [I]  partition: 0, offset: 82
+
+2019/07/18 16:56:53.490 [I]  partition: 0, offset: 83
+
+2019/07/18 16:56:53.526 [I]  partition: 0, offset: 84
+
+2019/07/18 16:56:55.174 [I]  partition: 0, offset: 85
+
+2019/07/18 16:56:55.210 [I]  partition: 0, offset: 86
+
+2019/07/18 16:56:55.245 [I]  partition: 0, offset: 87
+
+2019/07/18 16:56:55.280 [I]  partition: 0, offset: 88
+
+2019/07/18 16:56:55.316 [I]  partition: 0, offset: 89
+
+2019/07/18 16:56:55.352 [I]  partition: 0, offset: 90
+
+2019/07/18 16:56:55.388 [I]  partition: 0, offset: 91
+
+2019/07/18 16:56:58.933 [I]  partition: 0, offset: 92
+
+2019/07/18 16:56:58.967 [I]  partition: 0, offset: 93
+
+2019/07/18 16:56:59.003 [I]  partition: 0, offset: 94
+
+2019/07/18 16:56:59.038 [I]  partition: 0, offset: 95
+
+2019/07/18 16:56:59.075 [I]  partition: 0, offset: 96
+
+2019/07/18 16:56:59.111 [I]  partition: 0, offset: 97
+
+2019/07/18 16:56:59.146 [I]  partition: 0, offset: 98
+
+2019/07/18 16:56:59.181 [I]  partition: 0, offset: 99
+
+2019/07/18 16:57:01.940 [I]  partition: 0, offset: 100
+
+2019/07/18 16:57:01.975 [I]  partition: 0, offset: 101
+
+2019/07/18 16:57:02.010 [I]  partition: 0, offset: 102
+
+2019/07/18 16:57:02.047 [I]  partition: 0, offset: 103
+
+2019/07/18 16:57:02.084 [I]  partition: 0, offset: 104
+
+2019/07/18 16:57:02.119 [I]  partition: 0, offset: 105
+
+2019/07/18 16:57:02.154 [I]  partition: 0, offset: 106
+
+2019/07/18 16:57:02.190 [I]  partition: 0, offset: 107
+
+2019/07/18 16:57:02.226 [I]  partition: 0, offset: 108
+
+2019/07/18 16:57:05.196 [I]  partition: 0, offset: 109
+
+2019/07/18 16:57:05.231 [I]  partition: 0, offset: 110
+
+2019/07/18 16:57:05.267 [I]  partition: 0, offset: 111
+
+2019/07/18 16:57:05.302 [I]  partition: 0, offset: 112
+
+2019/07/18 16:57:05.340 [I]  partition: 0, offset: 113
+
+2019/07/18 16:57:05.376 [I]  partition: 0, offset: 114
+
+2019/07/18 16:57:05.415 [I]  partition: 0, offset: 115
+
+2019/07/18 16:57:05.452 [I]  partition: 0, offset: 116
+
+2019/07/18 16:57:05.488 [I]  partition: 0, offset: 117
+
+2019/07/18 16:57:05.524 [I]  partition: 0, offset: 118
+
+2019/07/18 16:57:08.710 [I]  partition: 0, offset: 119
+
+2019/07/18 16:57:08.745 [I]  partition: 0, offset: 120
+
+2019/07/18 16:57:08.781 [I]  partition: 0, offset: 121
+
+2019/07/18 16:57:08.815 [I]  partition: 0, offset: 122
+
+2019/07/18 16:57:08.850 [I]  partition: 0, offset: 123
+
+2019/07/18 16:57:08.886 [I]  partition: 0, offset: 124
+
+2019/07/18 16:57:08.931 [I]  partition: 0, offset: 125
+
+2019/07/18 16:57:08.966 [I]  partition: 0, offset: 126
+
+2019/07/18 16:57:09.016 [I]  partition: 0, offset: 127
+
+2019/07/18 16:57:09.051 [I]  partition: 0, offset: 128
+
+2019/07/18 16:57:09.086 [I]  partition: 0, offset: 129
+
+2019/07/18 16:57:09.122 [I]  partition: 0, offset: 130
+
+2019/07/18 16:59:12.648 [D]  init all success
+
+2019/07/18 17:00:28.979 [I]  partition: 0, offset: 131
+
+2019/07/18 17:00:29.388 [I]  partition: 0, offset: 0
+
+2019/07/18 17:00:29.423 [I]  partition: 0, offset: 1
+
+2019/07/18 17:00:29.459 [I]  partition: 0, offset: 2
+
+2019/07/18 17:00:29.494 [I]  partition: 0, offset: 3
+
+2019/07/18 17:00:29.530 [I]  partition: 0, offset: 4
+
+2019/07/18 17:00:39.471 [I]  partition: 0, offset: 5
+
+2019/07/18 17:00:39.507 [I]  partition: 0, offset: 6
+
+2019/07/18 17:00:39.543 [I]  partition: 0, offset: 7
+
+2019/07/18 17:00:39.579 [I]  partition: 0, offset: 8
+
+2019/07/18 17:00:39.614 [I]  partition: 0, offset: 9
+
+2019/07/18 17:00:39.650 [I]  partition: 0, offset: 10
+
+2019/07/18 17:00:44.738 [I]  partition: 0, offset: 132
+
+2019/07/18 17:00:44.774 [I]  partition: 0, offset: 133
+
+2019/07/18 17:00:47.249 [I]  partition: 0, offset: 134
+
+2019/07/18 17:00:47.285 [I]  partition: 0, offset: 135
+
+2019/07/18 17:00:47.320 [I]  partition: 0, offset: 136
+
+2019/07/18 17:00:47.357 [I]  partition: 0, offset: 137
+
+2019/07/18 17:00:47.392 [I]  partition: 0, offset: 138
+
+2019/07/18 17:00:47.427 [I]  partition: 0, offset: 139
+
+2019/07/18 17:00:47.464 [I]  partition: 0, offset: 140
+
+2019/07/18 17:00:47.500 [I]  partition: 0, offset: 141
+
+2019/07/18 17:00:47.535 [I]  partition: 0, offset: 142
+
+2019/07/18 17:00:47.570 [I]  partition: 0, offset: 143
+
+2019/07/18 17:00:47.606 [I]  partition: 0, offset: 144
+
+2019/07/18 17:00:49.008 [I]  partition: 0, offset: 145
+
+2019/07/18 17:00:49.043 [I]  partition: 0, offset: 146
+
+2019/07/18 17:00:49.079 [I]  partition: 0, offset: 147
+
+2019/07/18 17:00:49.114 [I]  partition: 0, offset: 148
+
+2019/07/18 17:00:49.152 [I]  partition: 0, offset: 149
+
+2019/07/18 17:00:49.187 [I]  partition: 0, offset: 150
+
+2019/07/18 17:00:49.223 [I]  partition: 0, offset: 151
+
+2019/07/18 17:00:49.259 [I]  partition: 0, offset: 152
+
+2019/07/18 17:00:49.296 [I]  partition: 0, offset: 153
+
+2019/07/18 17:00:49.332 [I]  partition: 0, offset: 154
+
+2019/07/18 17:00:49.367 [I]  partition: 0, offset: 155
+
+2019/07/18 17:00:49.403 [I]  partition: 0, offset: 156
+
+2019/07/18 17:01:23.841 [D]  init all success
+
+2019/07/18 17:01:38.884 [I]  partition: 0, offset: 157
+
+2019/07/18 17:01:43.103 [I]  partition: 0, offset: 11
+
+2019/07/18 17:01:45.861 [I]  partition: 0, offset: 12
+
+2019/07/18 17:01:45.897 [I]  partition: 0, offset: 13
+
+2019/07/18 17:02:01.405 [I]  partition: 0, offset: 14
+
+2019/07/18 17:02:01.441 [I]  partition: 0, offset: 15
+
+2019/07/18 17:02:01.477 [I]  partition: 0, offset: 16
+
+2019/07/18 17:02:05.164 [I]  partition: 0, offset: 17
+
+2019/07/18 17:02:05.200 [I]  partition: 0, offset: 18
+
+2019/07/18 17:02:05.236 [I]  partition: 0, offset: 19
+
+2019/07/18 17:02:05.273 [I]  partition: 0, offset: 20
+
+2019/07/18 17:02:08.172 [I]  partition: 0, offset: 21
+
+2019/07/18 17:02:08.208 [I]  partition: 0, offset: 22
+
+2019/07/18 17:02:08.243 [I]  partition: 0, offset: 23
+
+2019/07/18 17:02:08.277 [I]  partition: 0, offset: 24
+
+2019/07/18 17:02:08.314 [I]  partition: 0, offset: 25
+
+2019/07/18 17:02:10.175 [I]  partition: 0, offset: 26
+
+2019/07/18 17:02:10.212 [I]  partition: 0, offset: 27
+
+2019/07/18 17:02:10.255 [I]  partition: 0, offset: 28
+
+2019/07/18 17:02:10.302 [I]  partition: 0, offset: 29
+
+2019/07/18 17:02:10.337 [I]  partition: 0, offset: 30
+
+2019/07/18 17:02:10.374 [I]  partition: 0, offset: 31
+
+2019/07/18 17:02:11.929 [I]  partition: 0, offset: 32
+
+2019/07/18 17:02:11.964 [I]  partition: 0, offset: 33
+
+2019/07/18 17:02:12.000 [I]  partition: 0, offset: 34
+
+2019/07/18 17:02:12.036 [I]  partition: 0, offset: 35
+
+2019/07/18 17:02:12.070 [I]  partition: 0, offset: 36
+
+2019/07/18 17:02:12.105 [I]  partition: 0, offset: 37
+
+2019/07/18 17:02:12.141 [I]  partition: 0, offset: 38
+
+2019/07/18 17:02:13.683 [I]  partition: 0, offset: 39
+
+2019/07/18 17:02:13.718 [I]  partition: 0, offset: 40
+
+2019/07/18 17:02:13.754 [I]  partition: 0, offset: 41
+
+2019/07/18 17:02:13.791 [I]  partition: 0, offset: 42
+
+2019/07/18 17:02:13.828 [I]  partition: 0, offset: 43
+
+2019/07/18 17:02:13.863 [I]  partition: 0, offset: 44
+
+2019/07/18 17:02:13.898 [I]  partition: 0, offset: 45
+
+2019/07/18 17:02:13.934 [I]  partition: 0, offset: 46
+
+2019/07/18 17:02:15.439 [I]  partition: 0, offset: 47
+
+2019/07/18 17:02:15.475 [I]  partition: 0, offset: 48
+
+2019/07/18 17:02:15.512 [I]  partition: 0, offset: 49
+
+2019/07/18 17:02:15.546 [I]  partition: 0, offset: 50
+
+2019/07/18 17:02:15.582 [I]  partition: 0, offset: 51
+
+2019/07/18 17:02:15.617 [I]  partition: 0, offset: 52
+
+2019/07/18 17:02:15.654 [I]  partition: 0, offset: 53
+
+2019/07/18 17:02:15.692 [I]  partition: 0, offset: 54
+
+2019/07/18 17:02:15.728 [I]  partition: 0, offset: 55
+
+2019/07/18 17:02:19.453 [I]  partition: 0, offset: 56
+
+2019/07/18 17:02:19.488 [I]  partition: 0, offset: 57
+
+2019/07/18 17:02:19.524 [I]  partition: 0, offset: 58
+
+2019/07/18 17:02:19.560 [I]  partition: 0, offset: 59
+
+2019/07/18 17:02:19.600 [I]  partition: 0, offset: 60
+
+2019/07/18 17:02:19.635 [I]  partition: 0, offset: 61
+
+2019/07/18 17:02:19.671 [I]  partition: 0, offset: 62
+
+2019/07/18 17:02:19.707 [I]  partition: 0, offset: 63
+
+2019/07/18 17:02:19.981 [I]  partition: 0, offset: 64
+
+2019/07/18 17:02:20.016 [I]  partition: 0, offset: 65
+
+2019/07/18 17:02:21.710 [I]  partition: 0, offset: 66
+
+2019/07/18 17:02:21.746 [I]  partition: 0, offset: 67
+
+2019/07/18 17:02:21.780 [I]  partition: 0, offset: 68
+
+2019/07/18 17:02:21.817 [I]  partition: 0, offset: 69
+
+2019/07/18 17:02:21.852 [I]  partition: 0, offset: 70
+
+2019/07/18 17:02:21.889 [I]  partition: 0, offset: 71
+
+2019/07/18 17:02:21.924 [I]  partition: 0, offset: 72
+
+2019/07/18 17:02:21.959 [I]  partition: 0, offset: 73
+
+2019/07/18 17:02:21.994 [I]  partition: 0, offset: 74
+
+2019/07/18 17:02:22.029 [I]  partition: 0, offset: 75
+
+2019/07/18 17:02:22.065 [I]  partition: 0, offset: 76
+
+2019/07/18 17:02:25.209 [I]  partition: 0, offset: 158
+
+2019/07/18 17:02:25.246 [I]  partition: 0, offset: 159
+
+2019/07/18 17:02:29.727 [I]  partition: 0, offset: 77
+
+2019/07/18 17:02:29.762 [I]  partition: 0, offset: 78
+
+2019/07/18 17:02:29.798 [I]  partition: 0, offset: 79
+
+2019/07/18 17:02:29.833 [I]  partition: 0, offset: 80
+
+2019/07/18 17:02:29.871 [I]  partition: 0, offset: 81
+
+2019/07/18 17:02:29.906 [I]  partition: 0, offset: 82
+
+2019/07/18 17:02:29.942 [I]  partition: 0, offset: 83
+
+2019/07/18 17:02:29.978 [I]  partition: 0, offset: 84
+
+2019/07/18 17:02:30.014 [I]  partition: 0, offset: 85
+
+2019/07/18 17:02:30.050 [I]  partition: 0, offset: 86
+
+2019/07/18 17:02:30.087 [I]  partition: 0, offset: 87
+
+2019/07/18 17:02:30.122 [I]  partition: 0, offset: 88
+
+2019/07/18 17:02:31.480 [I]  partition: 0, offset: 89
+
+2019/07/18 17:02:31.520 [I]  partition: 0, offset: 90
+
+2019/07/18 17:02:31.555 [I]  partition: 0, offset: 91
+
+2019/07/18 17:02:31.591 [I]  partition: 0, offset: 92
+
+2019/07/18 17:02:31.627 [I]  partition: 0, offset: 93
+
+2019/07/18 17:02:31.663 [I]  partition: 0, offset: 94
+
+2019/07/18 17:02:31.702 [I]  partition: 0, offset: 95
+
+2019/07/18 17:02:31.738 [I]  partition: 0, offset: 96
+
+2019/07/18 17:02:31.774 [I]  partition: 0, offset: 97
+
+2019/07/18 17:02:31.811 [I]  partition: 0, offset: 98
+
+2019/07/18 17:02:31.847 [I]  partition: 0, offset: 99
+
+2019/07/18 17:02:31.883 [I]  partition: 0, offset: 100
+
+2019/07/18 17:02:31.918 [I]  partition: 0, offset: 101
+
+2019/07/18 17:02:32.993 [I]  partition: 0, offset: 102
+
+2019/07/18 17:02:33.032 [I]  partition: 0, offset: 103
+
+2019/07/18 17:02:33.070 [I]  partition: 0, offset: 104
+
+2019/07/18 17:02:33.105 [I]  partition: 0, offset: 105
+
+2019/07/18 17:02:33.140 [I]  partition: 0, offset: 106
+
+2019/07/18 17:02:33.174 [I]  partition: 0, offset: 107
+
+2019/07/18 17:02:33.209 [I]  partition: 0, offset: 108
+
+2019/07/18 17:02:33.245 [I]  partition: 0, offset: 109
+
+2019/07/18 17:02:33.280 [I]  partition: 0, offset: 110
+
+2019/07/18 17:02:33.317 [I]  partition: 0, offset: 111
+
+2019/07/18 17:02:33.353 [I]  partition: 0, offset: 112
+
+2019/07/18 17:02:33.389 [I]  partition: 0, offset: 113
+
+2019/07/18 17:02:33.424 [I]  partition: 0, offset: 114
+
+2019/07/18 17:02:33.459 [I]  partition: 0, offset: 115
+
+2019/07/18 17:02:34.746 [I]  partition: 0, offset: 116
+
+2019/07/18 17:02:34.782 [I]  partition: 0, offset: 117
+
+2019/07/18 17:02:34.818 [I]  partition: 0, offset: 118
+
+2019/07/18 17:02:34.854 [I]  partition: 0, offset: 119
+
+2019/07/18 17:02:34.890 [I]  partition: 0, offset: 120
+
+2019/07/18 17:02:34.926 [I]  partition: 0, offset: 121
+
+2019/07/18 17:02:34.963 [I]  partition: 0, offset: 122
+
+2019/07/18 17:02:34.999 [I]  partition: 0, offset: 123
+
+2019/07/18 17:02:35.035 [I]  partition: 0, offset: 124
+
+2019/07/18 17:02:35.072 [I]  partition: 0, offset: 125
+
+2019/07/18 17:02:35.108 [I]  partition: 0, offset: 126
+
+2019/07/18 17:02:35.144 [I]  partition: 0, offset: 127
+
+2019/07/18 17:02:35.179 [I]  partition: 0, offset: 128
+
+2019/07/18 17:02:35.213 [I]  partition: 0, offset: 129
+
+2019/07/18 17:02:35.250 [I]  partition: 0, offset: 130
+
+2019/07/18 17:02:36.002 [I]  partition: 0, offset: 131
+
+2019/07/18 17:02:36.037 [I]  partition: 0, offset: 132
+
+2019/07/18 17:02:36.074 [I]  partition: 0, offset: 133
+
+2019/07/18 17:02:36.109 [I]  partition: 0, offset: 134
+
+2019/07/18 17:02:36.144 [I]  partition: 0, offset: 135
+
+2019/07/18 17:02:36.179 [I]  partition: 0, offset: 136
+
+2019/07/18 17:02:36.215 [I]  partition: 0, offset: 137
+
+2019/07/18 17:02:36.250 [I]  partition: 0, offset: 138
+
+2019/07/18 17:02:36.285 [I]  partition: 0, offset: 139
+
+2019/07/18 17:02:36.320 [I]  partition: 0, offset: 140
+
+2019/07/18 17:02:36.355 [I]  partition: 0, offset: 141
+
+2019/07/18 17:02:36.390 [I]  partition: 0, offset: 142
+
+2019/07/18 17:02:36.425 [I]  partition: 0, offset: 143
+
+2019/07/18 17:02:36.460 [I]  partition: 0, offset: 144
+
+2019/07/18 17:02:36.495 [I]  partition: 0, offset: 145
+
+2019/07/18 17:02:36.529 [I]  partition: 0, offset: 146
+
+2019/07/18 17:02:52.798 [I]  partition: 0, offset: 147
+
+2019/07/18 17:03:02.549 [I]  partition: 0, offset: 160
+
