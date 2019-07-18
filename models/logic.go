@@ -28,6 +28,7 @@ func ConvertLogLevel(logLevel string) int {
 }
 
 func (appConf *Config) LoadConfig(adapterType, filename string) (err error) {
+	appConf.LogCollect = make(map[string][]CollectConfig)
 	conf, err := config.NewConfig(adapterType, filename)
 	if err != nil {
 		fmt.Println("LoadConfig faield", err)

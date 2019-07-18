@@ -2,7 +2,6 @@ package main
 
 import (
 	"context"
-	"encoding/json"
 	"fmt"
 	etcd_client "go.etcd.io/etcd/clientv3"
 	"kafka-logMgr/models"
@@ -33,20 +32,21 @@ func SetLogConfToEtcd() error {
 		LogPath: "../logs/collect2.log",
 		Topic:   "collect2",
 	})
-	confStr, err := json.Marshal(collectConf)
-	if err != nil {
-		fmt.Println("json Faild: ", err)
-		return err
-	}
+	//confStr, err := json.Marshal(collectConf)
+	//if err != nil {
+	//	fmt.Println("json Faild: ", err)
+	//	return err
+	//}
+	//ctx, cancel := context.WithTimeout(context.Background(), time.Second)
+	//_, err = cli.Put(ctx, etcdKey, string(confStr))
+	//if err != nil {
+	//	fmt.Println("TLE: ", err)
+	//	return err
+	//}
+	//cancel()
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
-	_, err = cli.Put(ctx, etcdKey, string(confStr))
-	if err != nil {
-		fmt.Println("TLE: ", err)
-		return err
-	}
+	cli.Delete(ctx, etcdKey)
 	cancel()
-	ctx, cancel = context.WithTimeout(context.Background(), time.Second)
-	//cli.Delete(ctx, etcdKey)
 	fmt.Println("Connect Etcd Success!")
 	return nil
 }

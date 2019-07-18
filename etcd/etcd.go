@@ -8,6 +8,10 @@ import (
 	"time"
 )
 
+var (
+	ChKeyMessage chan *etcd_client.Event
+)
+
 type EtcdClient struct {
 	client   *etcd_client.Client
 	EtcdKeys []string
@@ -19,6 +23,7 @@ var (
 )
 
 func InitEtcd(addr []string, key string) error {
+	ChKeyMessage = make(chan *etcd_client.Event, 100)
 	cli, err := etcd_client.New(etcd_client.Config{
 		Endpoints:   addr,
 		DialTimeout: 5 * time.Second,
@@ -81,6 +86,7 @@ func watchKey(key string) error {
 				//} else if ev.Type == etcd_client.EventTypePut {
 				//	UpdateCollect(string(ev.Kv.Key), string(ev.Kv.Value))
 				//}
+				ChKeyMessage <- ev
 			}
 		}
 	}

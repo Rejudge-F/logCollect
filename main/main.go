@@ -25,9 +25,9 @@ func main() {
 		fmt.Println("InitLogger failed")
 		return
 	}
-	err = tailf.InitTailf(nil, AppConf.ChanSize)
+	err = tailf.InitTailf(nil, AppConf.ChanSize, AppConf.LogCollect)
 	for _, v := range AppConf.LogCollect {
-		err = tailf.InitTailf(v, AppConf.ChanSize)
+		err = tailf.InitTailf(v, AppConf.ChanSize, AppConf.LogCollect)
 		if err != nil {
 			logs.Info("No file need to tail.")
 		}
