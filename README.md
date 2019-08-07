@@ -1,4 +1,4 @@
-# kafka-logMgr
+# logCollect
 # kafka日志收集系统
 ## 初步模型
 - 设计目的：简化日志收集
